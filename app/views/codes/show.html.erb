@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @code.text %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @code.price %>
+</p>
+
+<p>
+  <strong>Used:</strong>
+  <%= @code.used %>
+</p>
+
+<%= link_to 'Edit', edit_code_path(@code) %> |
+<%= link_to 'Back', codes_path %>
