@@ -1,0 +1,120 @@
+a) Con agua 
+b) Con Jugo de naranja 
+c) Con Gatorade® |true
+d) Con refresco 
+a) Una malteada 
+b) Gatorade® |true
+c) Agua 
+d) Un licuado 
+a) En el antro 
+b) Antes de hacer ejercicio |true
+c) Antes de dormir 
+d) Después de hacer ejercicio 
+a) Durante la comida 
+b) Al despertarse  
+c) Durante el ejercicio |true
+d) Antes de hacer ejercicio 
+a) Después de hacer ejercicio |true
+b) Antes de hacer ejercicio  
+c) Mientras se hace ejercicio 
+d) Antes de dormir 
+a) Antes de hacer ejercicio 
+b) Mientras haces ejercicio 
+c) Después de hacer ejercicio 
+d) Antes, durante y después de hacer ejercicio |true
+a) Una manzana |true
+b) Una barra de mantequilla 
+c) Una barra de chocolate 
+d) Un refresco de cola 
+a) Gracias por estar ahí todo el tiempo 
+b) Esto es por todo el Gatorade que me compraste |true
+c) Espero que lo disfrutes mucho 
+d) Te amo 
+a) UCLA Bruins  
+b) Alabama Crimson Tide 
+c) Florida Gators  |true
+d) Penn State Nittany Lions 
+a) 2008 
+b) 2010 
+c) 2012 |true
+d) 2014 
+a) Trofeo NCAA 
+b) Trofeo NFL 
+c) Trofeo Dan Marino 
+d) Trofeo Vince Lombardi |true
+a) 16 
+b) 32 |true
+c) 40 
+d) 64 
+a) Green Bay Packers |true
+b) Denver Broncos 
+c) Dallas Cowboys 
+d) New England Patriots 
+a) 1905 
+b) 1943 
+c) 1950 
+d) 1967 |true
+a) Denver Broncos 
+b) Dallas Cowboys 
+c) Pittsburgh Steelers |true
+d) New England Patriots 
+a) 9 
+b) 11 |true
+c) 15 
+d) 30 
+a) 15 minutos |true
+b) 20 minutos 
+c) 25 minutos 
+d) 30 minutos 
+a) Nueva York 
+b) Tampa Bay 
+c) Miami |true
+d) Los Angeles 
+a) 80 
+b) 90 
+c) 100 |true
+d) 120 
+a) 1 
+b) 2 |true
+c) 3 
+d) 4 
+a) Seattle Seahawks |true
+b) Denver Broncos 
+c) Philadelphia Eagles 
+d) NY Giants 
+a) Nueva Orleans 
+b) Nueva York |true
+c) Chicago 
+d) San Diego 
+a) Seattle 
+b) Denver 
+c) San Diego 
+d) Dallas |true
+a) San Diego 
+b) Chicago 
+c) Phoenix |true
+d) Portland 
+a) 8 
+b) 16 |true
+c) 20 
+d) 24 
+a) 0 
+b) 2 |true
+c) 5 
+d) 10 
+a) 3 
+b) 4 
+c) 6 |true
+d) 7 
+a) 5 
+b) 8 
+c) 10 |true
+d) 12 
+a) 1 
+b) 2 
+c) 5 
+d) 7 |true
+a) Phoenix 
+b) Indianápolis |true
+c) San Diego 
+d) Memphis 

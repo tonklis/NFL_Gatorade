@@ -1,0 +1,120 @@
+a) 4000 
+b) 6000 
+c) 8000 |true
+d) 9000 
+a) Green Bay Packers 
+b) New England Patriots |true
+c) Baltimore Ravens 
+d) Denver Broncos 
+a) Baltimore Ravens 
+b) San Francisco 49ers 
+c) Dallas Cowboys |true
+d) Green Bay Packers 
+a) Denver Broncos |true
+b) Chicago Bears 
+c) Dallas Cowboys 
+d) New England Patriots 
+a) Oakland Raiders 
+b) Kansas City Chiefs |true
+c) Miami Dolphins 
+d) NY Jets 
+a) Minnesota Vikings |true
+b) NY Jets 
+c) Green Bay Packers 
+d) Chicago Bears 
+a) Joe Montana |true
+b) Tom Brady 
+c) Eli Manning 
+d) Bart Starr 
+a) Universidad de Florida |true
+b) Harvard 
+c) Princeton 
+d) Universidad de Texas 
+a) John Lennon 
+b) Buddy Holly 
+c) Édith Piaf 
+d) Elvis |true
+a) Orange Bowl |true
+b) Sugar Bowl 
+c) Rose Bowl 
+d) Cotton Bowl 
+a) 1964 
+b) 1965 |true
+c) 1966 
+d) 1967 
+a) 1933 
+b) 1953 
+c) 1983 |true
+d) 1993 
+a) 1954 
+b) 1964 
+c) 1974 
+d) 1984 |true
+a) 1970 
+b) 1980 
+c) 1990 |true
+d) 2000 
+a) 1989 
+b) 1990 |true
+c) 1991 
+d) 1992 
+a) Nikola Tesla 
+b) Robert Cade |true
+c) Karl Ziegler  
+d) Melvin Calvin 
+a) Orange Bowl 
+b) Cotton Bowl 
+c) Rose Bowl |true
+d) Sugar Bowl 
+a) Seattle Seahawks |true
+b) Denver Broncos 
+c) Atlanta Falcons 
+d) New England Patriots 
+a) Seattle Seahawks 
+b) Denver Broncos |true
+c) New England Patriots 
+d) Atlanta Falcons 
+a) Los Angeles |true
+b) Nueva Orleans 
+c) Florida 
+d) Nueva York 
+a) Dallas 
+b) Nueva York 
+c) Miami |true
+d) Kansas City 
+a) Oakland Raiders 
+b) Minnesota Vikings 
+c) Miami Dolphins 
+d) Buffalo Bills true
+a) Dallas Cowboys true
+b) Pittsburgh Steelers 
+c) Miami Dolphins 
+d) San Francisco 49ers 
+a) Jacksonville 
+b) Los Angeles 
+c) Chicago |true
+d) Houston 
+a) 0 
+b) 1 true
+c) 2 
+d) 3 
+a) 15 
+b) 33 
+c) 35 |true
+d) 36 
+a) Super Bowl I 
+b) Super Bowl II |true
+c) Super Bowl III 
+d) Super Bowl IV 
+a) 1 
+b) 2 
+c) 4 
+d) 6 |true
+a) 3 |true
+b) 6 
+c) 7 
+d) 10 
+a) 40 
+b) 46 
+c) 55 |true
+d) 63 

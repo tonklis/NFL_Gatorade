@@ -1,0 +1,120 @@
+a) New York Yankees 
+b) Chicago Cubs 
+c) Arizona Diamond Backs 
+d) St. Louis Cardinals |true
+a) Bart Starr 
+b) Don Horn  
+c) Ben Wilson 
+d) Jerry Kramer |true
+a) Jerry West |true
+b) Jim Barnes 
+c) Hank Finkel 
+d) Michael Jordan 
+a) The Washington Post 
+b) The New Yorker 
+c) The Sun 
+d) The New York Times |true
+a) NY Jets 
+b) Dallas Cowboys 
+c) Washington Redskins |true
+c) Oakland Raiders 
+a) Ronald Reagan |true
+b) Bill Clinton 
+c) Jimmy Carter 
+d) Gerald Ford 
+a) Envase de vidrio 
+b) Envase de cartón 
+c) Lata |true
+d) Envase de plástico 
+a) 15 
+b) 19 |true
+c) 21 
+d) 24 
+1) Denver Broncos 
+2) Green Bay Packers 
+3) NY Giants 
+4) Baltimore Ravens |true
+a) Baltimore Ravens |true
+b) NY Giants 
+c) Chicago Bears 
+d) Seattle Seahawks 
+a) Vince Lombardi 
+b) John Rauch 
+c) Weeb Ewbank 
+d) Hank Stram |true
+a) Frank Grant 
+b) Chuck Howley |true
+c) Bart Starr 
+d) Larry Brown 
+a) Ken Stabler 
+b) Mark Moseley 
+c) Chuck Howley |true
+d) Frank Grant 
+a) Len Dawson 
+b) Joe Montana 
+c) Jake Scott 
+d) Terry Bradshaw |true
+a) San Diego Chargers 
+b) Atlanta Falcons 
+c) Carolina Panthers 
+d) Detroit Lions |true
+a) Joe Montana 
+b) Tedy Bruschi 
+c) Charles Haley |true
+d) Bart Starr 
+a) Doug Williams |true
+b) Donovan McNab 
+c) Russel Wilson 
+d) Len Dawson 
+a) Minnesota Vikings 
+b) Buffalo Bills 
+c) Baltimore Ravens |true
+d) Miami Dolphins 
+a) Super Bowl VI 
+b) Super Bowl X 
+c) Super Bowl XII |true
+d) Super Bowl XIX 
+a) Super Bowl XII 
+b) Super Bowl XIII 
+c) Super Bowl XXVII |true
+d) Super Bowl XXVIII 
+a) Larry Bird 
+b) Vince Lombardi 
+c) Weeb Ewbank 
+d) Bill Parcells |true
+a) 1 
+b) 2 
+c) 3 |true
+d) 4
+a) 18 puntos 
+b) 22 puntos 
+c) 25 puntos 
+d) 37 puntos |true
+a) Super Bowl VI (Dallas vs Miami) 
+b) Super Bowl X (Dallas vs Pittsburgh) 
+c) Super Bowl XV (Oakland vs Philadelphia) 
+d) Super Bowl XXIII (San Francisco vs Cincinnati) |true
+a) 3 horas y 48 minutos 
+b) 4 horas y 2 minutos 
+c) 4 horas y 14 minutos |true
+d) 4 horas y 35 minutos 
+a) 16 
+b) 18 |true
+c) 20 
+d) 22 
+a) 48 yardas |true
+b) 50 yardas 
+c) 52 yardas 
+d) 54 yardas 
+a) 3 
+b) 4 
+c) 5 |true
+d) 6 
+a) 0 |true
+b) 1 
+c) 2 
+d) 4 
+a) 1 
+b) 2 
+c) 3 |true
+d) 4 
