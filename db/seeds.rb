@@ -25,7 +25,7 @@ end
 file.close
 
 #Crea 3 niveles de dificultad
-f = Difficulty.create(description: 'Fácil')
+f = Difficulty.create(description: 'Facil')
 facil_id = f.id 
 i = Difficulty.create(description: 'Intermedio')
 intermedio_id = i.id
@@ -106,3 +106,27 @@ while (line = file_preguntas.gets)
 end
 file_preguntas.close
 file_respuestas.close
+
+#Cargar codigos de premios_faciles.csv
+file = File.open('db/seeds/premios_faciles.csv', 'r:UTF-8')
+while (line = file.gets)
+	arr = line.encode!('UTF-8', 'UTF-8', :invalid => :replace).split(",")
+	code = Prize.create(dificulty_id: facil_id, description: arr[0])
+end
+file.close
+
+#Cargar codigos de premios_intermedios.csv
+file = File.open('db/seeds/premios_intermedios.csv', 'r:UTF-8')
+while (line = file.gets)
+	arr = line.encode!('UTF-8', 'UTF-8', :invalid => :replace).split(",")
+	code = Prize.create(dificulty_id: intermedio_id, description: arr[0])
+end
+file.close
+
+#Cargar codigos de premios_dificiles.csv
+file = File.open('db/seeds/premios_dificiles.csv', 'r:UTF-8')
+while (line = file.gets)
+	arr = line.encode!('UTF-8', 'UTF-8', :invalid => :replace).split(",")
+	code = Prize.create(dificulty_id: dificil_id, description: arr[0])
+end
+file.close
