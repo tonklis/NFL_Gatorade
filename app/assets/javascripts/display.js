@@ -1,15 +1,3 @@
-function validateCode(code) {
-
-}
-
-function submitUser(user, address) {
-
-}
-
-function getDifficulties() {
-
-}
-
 function getQuestions(difficultyId){
 
 }

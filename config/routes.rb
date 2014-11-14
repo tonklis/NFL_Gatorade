@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   resources :users do
     collection do
       post 'is_winner'
+      post 'submit_with_address'
     end
   end
 

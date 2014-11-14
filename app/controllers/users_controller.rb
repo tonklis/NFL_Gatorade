@@ -65,6 +65,10 @@ class UsersController < ApplicationController
     @prize = User.is_winner(params[:user_id], params[:answers], params[:difficulty_id], params[:code])
   end
 
+  def submit_with_address
+    @user = User.submit_with_address(params[:nombres], params[:apellidos], params[:email], params[:telefono], params[:calle], params[:colonia], params[:municipio], params[:ciudad], params[:codigo])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

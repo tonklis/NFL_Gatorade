@@ -2,6 +2,11 @@ class User < ActiveRecord::Base
   belongs_to :address
   has_one :winner
 
+  def self.submit_with_address nombres, apellidos, email, telefono, calle, colonia, municipio, ciudad, codigo
+    address = Address.create(line1: calle, line2: colonia, line3: municipio, po_box: codigo, city: ciudad)
+    user = User.create(address_id: address.id, first_name: nombres, last_name: apellidos, phone_number: telefono, email: email)    
+  end
+
   def self.is_winner user_id, answers, difficulty_id, code
     result = nil
     if answers.uniq.count == 10
