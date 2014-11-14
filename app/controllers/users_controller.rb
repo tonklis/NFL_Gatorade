@@ -61,6 +61,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def is_winner
+    @prize = User.is_winner(params[:user_id], params[:answers], params[:difficulty_id], params[:code])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

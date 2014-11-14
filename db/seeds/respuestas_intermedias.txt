@@ -85,8 +85,8 @@ d) Kansas City
 a) Oakland Raiders 
 b) Minnesota Vikings 
 c) Miami Dolphins 
-d) Buffalo Bills true
-a) Dallas Cowboys true
+d) Buffalo Bills |true
+a) Dallas Cowboys |true
 b) Pittsburgh Steelers 
 c) Miami Dolphins 
 d) San Francisco 49ers 
@@ -95,7 +95,7 @@ b) Los Angeles
 c) Chicago |true
 d) Houston 
 a) 0 
-b) 1 true
+b) 1 |true
 c) 2 
 d) 3 
 a) 15 

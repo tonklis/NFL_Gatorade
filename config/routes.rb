@@ -3,7 +3,11 @@ Rails.application.routes.draw do
 
   resources :prizes
 
-  resources :questions
+  resources :questions do
+    collection do
+      get 'by_difficulty'
+    end
+  end
 
   resources :difficulties
 
@@ -11,7 +15,11 @@ Rails.application.routes.draw do
 
   resources :winners
 
-  resources :users
+  resources :users do
+    collection do
+      post 'is_winner'
+    end
+  end
 
   resources :addresses
 
@@ -19,7 +27,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'display#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

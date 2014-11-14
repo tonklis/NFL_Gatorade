@@ -61,6 +61,10 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def by_difficulty
+    @questions = Question.by_difficulty(params[:difficulty_id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_question
