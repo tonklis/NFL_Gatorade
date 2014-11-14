@@ -61,6 +61,10 @@ class DifficultiesController < ApplicationController
     end
   end
 
+  def available
+    @difficulties = Difficulty.available
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_difficulty

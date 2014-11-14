@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 
   def self.is_winner user_id, answers, difficulty_id, code
     result = nil
-    if answers.uniq.count == 2
+    if answers.uniq.count == 10
       is_winner = true
       answers.each do |answer|
         question_id = answer[:question_id]

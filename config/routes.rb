@@ -9,9 +9,17 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :difficulties
+  resources :difficulties do
+    collection do
+      get 'available'
+    end
+  end
 
-  resources :codes
+  resources :codes do
+    collection do
+      get 'is_valid'
+    end
+  end
 
   resources :winners
 
@@ -28,6 +36,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'display#index'
+  get "seleccion" => "display#selection"
+  get "preguntas" => "display#questions"
+  get "resultado" => "display#result"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -61,6 +61,10 @@ class CodesController < ApplicationController
     end
   end
 
+  def is_valid
+    @code = Code.is_valid(params[:code])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_code
