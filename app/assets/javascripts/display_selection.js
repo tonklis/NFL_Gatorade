@@ -28,8 +28,10 @@ function getQuestions(event) {
     data: { difficulty_id: event.target.value},
     success: function(data){
       if (data){
+        // TODO: revisar redirección
+        $("#difficultySelection").hide();
         $.each(data, function(index, value) {
-          $("#questions").append("<li id='question_" + value.id + "'>" + value.text + "</li>");
+          $("#questions").append("<li id='question_" + value.id + "' data-index='"+ index +"'>" + value.text + "</li>");
           $.each(value.answers, function(a_index, a_value) {
             $("#question_" + value.id).append("<div>"+ a_value.text +"</div>");
           });

@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   get "seleccion" => "display#selection"
   get "preguntas" => "display#questions"
   get "resultado" => "display#result"
+  get "registro" => "display#register"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NFL Gatorade</title>
+  <meta http-equiv=Content-Type content='text/html; charset=utf-8'>
+  <title>GATORADE PROMO
+  
+  <!-- Description, Keywords -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></title>
+  <%= csrf_meta_tags %>
+
+  <!-- Styles -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+
+<!-- Con todo y body -->
 <%= yield %>
 
-</body>
 </html>

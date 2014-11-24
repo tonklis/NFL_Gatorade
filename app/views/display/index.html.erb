@@ -1,17 +1,29 @@
 <%= javascript_include_tag 'display_index' %>
 
-<input id="verificaInput"></input>
-<button id="verificaButton">Verifica</button>
+<body class="bg_orange">
+    <div id="wrapper">
+        <header>
+            <div class="logo animated-logo bounceInDown "></div>
+        </header>
 
-<div id="registration" class="registration">
-  <label>nombre</label><input id="nombres"></input>
-  <label>apellidos</label><input id="apellidos"></input>
-  <label>email</label><input id="email"></input>
-  <label>telefono</label><input id="telefono"></input>
-  <label>calle y número</label><input id="calle"></input>
-  <label>colonia</label><input id="colonia"></input>
-  <label>municipio/delegacion</label><input id="municipio"></input>
-  <label>ciudad</label><input id="ciudad"></input>
-  <label>codigo postal</label><input id="codigo"></input>
-  <button id="registraButton">Regístrate</button>
+        <div id="main" class="index">
+            <div class="left promocode animated-leftpromocode bounceInLeft">
+
+                <input type="text" placeholder="INGRESA TU CÓDIGO AQUÍ" id="verificaInput"/>
+                <input type="submit" value="" id="verificaButton"></div>
+            <div class="right animated-page1-bottles zoomInDown">
+                <div class="bottles"></div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
+<!-- close div#main -->
+<footer>
+    <a href="#">Términos y Condiciones</a>
+</footer>
+</div>
+<!-- close div#wrapper -->
+
+</body>

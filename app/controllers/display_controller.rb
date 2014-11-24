@@ -4,6 +4,10 @@ class DisplayController < ApplicationController
 
   end
 
+  def register
+
+  end
+
   def selection
 
   end
