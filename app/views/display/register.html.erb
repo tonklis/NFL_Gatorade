@@ -7,59 +7,62 @@
 		</header>
 
 		<div id="main">
-			<h1 class="animated fadeIn">Registro</h2>
+			<h1 class="animated fadeIn">Registro</h1>
 
-			<div class="user-info">
-				<div class="w49 animated-infoblock1 bounceInLeft">
-					<input type="text" placeholder="Nombre(s)" id="nombres"/>
-				</div>
-				<div class="w100 animated-infoblock2 bounceInLeft">
-					<input type="text" placeholder="Appelidos" id="apellidos"/>
+			<form id="user-info-form" method="post">
+				<div class="user-info">
+					<div class="w49 animated-infoblock1 bounceInLeft">
+						<input type="text" placeholder="Nombre(s)" id="nombres" required/>
+					</div>
+					<div class="w100 animated-infoblock2 bounceInLeft">
+						<input type="text" placeholder="Appelidos" id="apellidos" required/>
 
-				</div>
-				<div class="w100 animated-infoblock3 bounceInLeft">
-					<input type="text" placeholder="Email" id="email"/>
-				</div>
-				<div class="fl-l  animated-infoblock4 bounceInLeft">
-					<input type="text" placeholder="Teléfono" id="telefono"/>
-				</div>
-				<div class="fl-r animated-infoblock4 bounceInLeft">
-					<input type="text" placeholder="Celular" id="celular"/>
-				</div>
-				<div class="fl-l animated-infoblock1 bounceInRight">
-					<input type="text" placeholder="Calle y número" id="calle"/>
-				</div>
-				<div class="fl-r animated-infoblock2 bounceInRight">
-					<input type="text" placeholder="Colonia" id="colonia"/>
-				</div>
-				<div class="fl-l animated-infoblock2 bounceInRight">
-					<input type="text" placeholder="Codigo Postal" id="codigo"/>
-				</div>
-				<div class="fl-r animated-infoblock3 bounceInRight">
-					<input type="text" placeholder="DELEGACIÓN / MUNICIPIO " id="municipio"/>
-				</div>
-				<div class="fl-l animated-infoblock4 bounceInRight">
-					<input type="text" placeholder="CIUDAD" id="ciudad"/>
-				</div>
-				<div class="fl-r last animated-infoblock5 bounceInRight">
-					<input type="text" placeholder="ESTADO" id="estado"/>
-				</div>
+					</div>
+					<div class="w100 animated-infoblock3 bounceInLeft">
+						<input type="text" placeholder="Email" id="email" required/>
+					</div>
+					<div class="fl-l  animated-infoblock4 bounceInLeft">
+						<input type="text" placeholder="Teléfono" id="telefono" required/>
+					</div>
+					<div class="fl-r animated-infoblock4 bounceInLeft">
+						<input type="text" placeholder="Celular" id="celular" required/>
+					</div>
+					<div class="fl-l animated-infoblock1 bounceInRight">
+						<input type="text" placeholder="Calle y número" id="calle" required/>
+					</div>
+					<div class="fl-r animated-infoblock2 bounceInRight">
+						<input type="text" placeholder="Colonia" id="colonia" required/>
+					</div>
+					<div class="fl-l animated-infoblock2 bounceInRight">
+						<input type="text" placeholder="Codigo Postal" id="codigo" required/>
+					</div>
+					<div class="fl-r animated-infoblock3 bounceInRight">
+						<input type="text" placeholder="DELEGACIÓN / MUNICIPIO " id="municipio" required/>
+					</div>
+					<div class="fl-l animated-infoblock4 bounceInRight">
+						<input type="text" placeholder="CIUDAD" id="ciudad" required/>
+					</div>
+					<div class="fl-r last animated-infoblock5 bounceInRight">
+						<input type="text" placeholder="ESTADO" id="estado" required/>
+					</div>
 
-				<div class="label animated-infoblock5 bounceInRight">FECHA DE NACIMIENTO</div>
-				<div class="mes animated-infoblock5 bounceInRight">
+					<div class="label animated-infoblock5 bounceInRight">FECHA DE NACIMIENTO</div>
 
-					<input type="text" placeholder="Mes"/>
+					<div class="mes animated-infoblock5 bounceInRight">
+						<input type="text" placeholder="Mes" id="mes" required/>
+					</div>
+					<div class="dia animated-infoblock5 bounceInRight">
+						<input type="text" placeholder="DÍA" id="dia" required/>
+					</div>
+					<div class="ano animated-infoblock5 bounceInRight">
+						<input type="text" placeholder="AÑO" id="anio" required/>
+					</div>
+					<div class="clear"></div>
+					<div class="siguiente animated-infoblock5 bounceInRight">
+						<input type="submit" value="" id="registraButton">
+					</div>
 				</div>
-				<div class="dia animated-infoblock5 bounceInRight">
-					<input type="text" placeholder="DÍA"/>
-				</div>
-				<div class="ano animated-infoblock5 bounceInRight">
-					<input type="text" placeholder="AÑO"/>
-				</div>
-				<div class="clear"></div>
-				<div class="siguiente animated-infoblock5 bounceInRight">
-					<input type="submit" value="" id="registraButton"></div>
-			</div>
+			</form>
 			<div class="clear"></div>
 			<!-- close div.user-info -->
 
