@@ -9,14 +9,14 @@
 
             <div class="q-men <%= @styles[0] %>"></div>
 
-            <div class="question animated fadeIn">
+            <div class="question animated fadeIn" id="questions" data-questions="<%= @questions.to_json(:include => :answers) %>">
                 <div class="lines <%= @styles[1] %>"></div>
-                <div class="q-number">1</div>
+                <div class="q-number" id="question_number"></div>
                 <div class="q-numberall">/ 10</div>
-                <div class="q-text ">
-                   <%= @questions.first.text %> 
+                <div class="q-text " id="question_text">
+                    
                 </div>
-                <div class="q-ref animated fadeIn"><%= @questions.first.source %></div>
+                <div class="q-ref animated fadeIn" id="question_source" style="display: none;"></div>
 
             </div>
             <div class="clear"></div>
@@ -24,26 +24,26 @@
 
                 <div>
                     <input id="radio1" type="radio" name="radio" value="1" checked="checked">
-                    <label for="radio1"><%= @questions.first.answers[0].text %></label>
+                    <label for="radio1" id="question_answer_0"></label>
                 </div>
                 <div>
                     <input id="radio2" type="radio" name="radio" value="2">
-                    <label for="radio2"><%= @questions.first.answers[1].text %></label>
+                    <label for="radio2" id="question_answer_1"></label>
                 </div>
                 <div>
                     <input id="radio3" type="radio" name="radio" value="3">
-                    <label for="radio3"><%= @questions.first.answers[2].text %></label>
+                    <label for="radio3" id="question_answer_2"></label>
                 </div>
                 <div>
-                    <input id="radio3" type="radio" name="radio" value="3">
-                    <label for="radio3"><%= @questions.first.answers[3].text %></label>
+                    <input id="radio4" type="radio" name="radio" value="4">
+                    <label for="radio4" id="question_answer_3"></label>
                 </div>
 
             </div>
             <div class="clear"></div>
 
             <div class="siguente-btn <%= @styles[3] %> animated fadeIn">
-                <input type="submit" value=""></div>
+                <input type="submit" value="" id="siguiente_btn"></div>
 
         </div>
         <!-- close div#main -->

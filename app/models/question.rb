@@ -3,6 +3,6 @@ class Question < ActiveRecord::Base
   has_many :answers
 
   def self.by_difficulty difficulty_id
-    Question.where("difficulty_id = ?", difficulty_id).shuffle[0..9]
+    Question.includes(:answers).where("difficulty_id = ?", difficulty_id).shuffle[0..9]
   end
 end
