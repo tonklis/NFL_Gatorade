@@ -10,36 +10,20 @@ function getDifficulties() {
     success: function(data){
       if (data){
         $.each(data, function(index, value) {
-          $("#difficultySelection").append("<input id='difficulty_" + value.id +"' type='radio' name='difficulties' value='" + value.id+ "' >" + value.description + "</input>");
-          $("#difficulty_" + value.id).on("click", getQuestions);
+          $("#dificultad_"+value.id).removeClass("pulse-no-action");
+          $("#dificultad_"+value.id).addClass("pulse");
+          $("#dificultad_"+value.id).val(value.id);
+          //$("#difficultySelection").append("<input id='difficulty_" + value.id +"' type='radio' name='difficulties' value='" + value.id+ "' >" + value.description + "</input>");
+          $("#dificultad_" + value.id).on("click", getQuestions);
         });
       }
     },error: function(){
-      alert("No se pudo validar el código, por favor intenta más tarde.");
+      alert("No se pudieron cargar las dificultades, por favor intenta más tarde.");
     }, complete: function(){
     }
   });
 }
 
 function getQuestions(event) {
-
-  $.ajax({
-    url: "/questions/by_difficulty",
-    data: { difficulty_id: event.target.value},
-    success: function(data){
-      if (data){
-        // TODO: revisar redirección
-        $("#difficultySelection").hide();
-        $.each(data, function(index, value) {
-          $("#questions").append("<li id='question_" + value.id + "' data-index='"+ index +"'>" + value.text + "</li>");
-          $.each(value.answers, function(a_index, a_value) {
-            $("#question_" + value.id).append("<div>"+ a_value.text +"</div>");
-          });
-        });
-      }
-    },error: function(){
-      alert("No se pudo validar el código, por favor intenta más tarde.");
-    }, complete: function(){
-    }
-  });
+  location.href = "/questions/by_difficulty?difficulty_id=" + event.target.value;
 }

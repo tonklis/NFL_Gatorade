@@ -43,7 +43,7 @@ h1 { font-size: 50px; color: #e7ecf2; font-family: 'gBlack'; background: -webkit
 footer { text-align: center; }
 footer a { font-family: 'MyriadWebPro-Condensed'; font-size: 20px; text-decoration: underline; }
 .user-info { margin: 0 auto; }
-.user-info input[type=text] { background: url(/assets/bg-input.png) top left repeat; color: #fff; text-transform: uppercase; font-family: 'PlexesPro-Light'; border: 1px #ccd2d9 solid; border-radius: 10px; padding: 7px 10px; text-align: left; font-size: 20px; width: 100%; }
+.user-info input[type=text], input[type=email], input[type=number] { background: url(/assets/bg-input.png) top left repeat; color: #fff; text-transform: uppercase; font-family: 'PlexesPro-Light'; border: 1px #ccd2d9 solid; border-radius: 10px; padding: 7px 10px; text-align: left; font-size: 20px; width: 100%; }
 .user-info div { margin-top: 2px; margin-bottom: 2px; }
 .w49 { width: 47%; }
 .w100 { width: 97%; }

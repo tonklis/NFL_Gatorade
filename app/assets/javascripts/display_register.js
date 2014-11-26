@@ -28,16 +28,16 @@ function submitUser() {
         rules: {
           nombres: {
             minlength:3, 
-          }
+          },
           apellidos: {
             minlength:3, 
-          }
+          },
           email: {
             email: true, 
-          }
+          },
           telefono: {
             phonevalidation: true, 
-          }
+          },
           celular: {
             minlength:3, 
           }

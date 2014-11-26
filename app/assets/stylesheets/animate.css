@@ -55,7 +55,7 @@ div.slideIn.third{z-index:100;left:19%;top:1000px;animation-delay:0s,5s;-moz-ani
   1%{opacity:1;top:-100px;}
   100%{opacity:1;top:200px;}
 }
-.animated-easy1{-webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-duration:13s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.animated-easy1{-webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .animated-easy2{-webkit-animation-delay:2s;animation-delay:2s;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .animated-medium1{-webkit-animation-delay:3s;animation-delay:3s;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .animated-medium2{-webkit-animation-delay:4s;animation-delay:4s;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
@@ -96,6 +96,18 @@ div.slideIn.third{z-index:100;left:19%;top:1000px;animation-delay:0s,5s;-moz-ani
   25%,75%{opacity:0;}
 }
 .flash{-webkit-animation-name:flash;animation-name:flash;}
+.pulse-no-action{
+  opacity: 0.2;
+}
+
+.pulse-no-action a{
+  cursor: default !important;
+}
+
+.pulse {
+  cursor: pointer !important;
+}
+
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes pulse{
   0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}

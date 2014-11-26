@@ -1,9 +1,41 @@
 <%= javascript_include_tag 'display_selection' %>
+<body class="bg_blue over-hid">
+    <div id="wrapper">
+        <header>
+            <div class="logo animated-logo zoomIn "></div>
+        </header>
 
-<div id="difficultySelection">
+        <div id="main" class="width100">
+            <h1 class="animated fadeIn">ESCOGE EL NIVEL</h1>
+            <div class="slideIn first">
+                <div class="animated-easy1 zoomOut easy-men"></div>
+            </div>
+            <div class="animated-easy2 fadeIn">
+                <div class="level easy pulse-no-action " id="dificultad_1">
+                </div>
+            </div>
 
-</div>
+            <div class="slideIn second">
+                <div class="animated-medium1 zoomOut medium-men"></div>
+            </div>
+            <div class="animated-medium2 fadeIn">
+                <div class="level medium pulse-no-action " id="dificultad_2">
+                </div>
+            </div>
+            <div class="slideIn third">
+                <div class="animated-hard1 zoomOut hard-men"></div>
+            </div>
+            <div class="animated-hard2 fadeIn">
+                <div class="level hard pulse-no-action" id="dificultad_3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- close div#main -->    
 
-<ul id="questions">
-
-</ul>
+    <footer>
+    <a href="#">Términos y Condiciones</a>
+    </footer>
+    </div>
+    <!-- close div#wrapper --> 
+</body>

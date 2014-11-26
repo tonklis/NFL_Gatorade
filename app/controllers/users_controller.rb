@@ -66,7 +66,10 @@ class UsersController < ApplicationController
   end
 
   def submit_with_address
-    @user = User.submit_with_address(params[:nombres], params[:apellidos], params[:email], params[:telefono], params[:calle], params[:colonia], params[:municipio], params[:ciudad], params[:codigo])
+    @user = User.submit_with_address(params[:nombres], params[:apellidos], params[:email], params[:telefono], params[:celular], params[:calle], params[:colonia], params[:municipio], params[:ciudad], params[:estado], params[:codigo], params[:anio], params[:mes], params[:dia])
+    if @user
+      redirect_to "/seleccion"
+    end
   end
 
   private

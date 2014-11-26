@@ -62,7 +62,8 @@ class QuestionsController < ApplicationController
   end
 
   def by_difficulty
-    @questions = Question.by_difficulty(params[:difficulty_id])
+    session[:difficulty_id] = params[:difficulty_id]
+    redirect_to "/preguntas"
   end
 
   private
