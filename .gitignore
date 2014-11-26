@@ -20,9 +20,9 @@ Gemfile.lock
 *.swp
 *.csv
 *.mwb
-faciles.*
-intermedias.*
-dificiles.*
-premios*.*
-codigos*.*
-respuestas*.*
+#faciles.*
+#intermedias.*
+#dificiles.*
+#premios*.*
+#codigos*.*
+#respuestas*.*
