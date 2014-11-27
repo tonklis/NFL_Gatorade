@@ -2,6 +2,10 @@ $(document).on("ready", onReady);
 
 function onReady() {
   //$("#registraButton").on("click", submitUser);
+}
+
+function valiate() {
+
   $("#user-info-form").validate({
         submitHandler: function(form) {
           form.submit();

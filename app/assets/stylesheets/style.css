@@ -40,7 +40,7 @@ h1 { font-size: 50px; color: #e7ecf2; font-family: 'gBlack'; background: -webkit
 .promocode input[type="submit"]:focus { opacity: 0.8; }
 .right { float: right; width: 35%; position: relative; }
 .bottles { width: 312px; height: 449px; background: url(/assets/products.png) top left no-repeat; background-size: cover; }
-footer { text-align: center; }
+footer { text-align: center;  }
 footer a { font-family: 'MyriadWebPro-Condensed'; font-size: 20px; text-decoration: underline; }
 .user-info { margin: 0 auto; }
 .user-info input[type=text], input[type=email], input[type=number] { background: url(/assets/bg-input.png) top left repeat; color: #fff; text-transform: uppercase; font-family: 'PlexesPro-Light'; border: 1px #ccd2d9 solid; border-radius: 10px; padding: 7px 10px; text-align: left; font-size: 20px; width: 100%; }
@@ -49,7 +49,8 @@ footer a { font-family: 'MyriadWebPro-Condensed'; font-size: 20px; text-decorati
 .w100 { width: 97%; }
 .fl-l { float: left; margin-right: 4%; width: 46%; }
 .fl-r { width: 47%; float: left; }
-.user-info .label { width: 123px; color: #fff; text-transform: uppercase; font-family: 'PlexesPro-Light'; text-align: right; font-size: 20px; display: block; float: left; margin-right: 10px; }
+.user-info .label { width: 123px; color: #fff; text-transform: uppercase; font-family: 'PlexesPro-Light'; text-align: right; font-size: 20px; display: block; float: left; margin: 6px 10px 0 0; }
+.user-info .label2 { width: 185px; color: #fff; text-transform: uppercase; font-family: 'PlexesPro-Light'; text-align: right; font-size: 20px; display: inline-block; float: left; margin: 6px 0 0 50px; }
 .clear { clear: both; }
 .mes, .dia { width: 20%; float: left; margin-right: 30px; }
 .ano { width: 20%; float: left; }
@@ -134,6 +135,7 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.bottles { width: 238px; height: 342px; }
 	footer a { font-size: 16px; }
 	.user-info { width: 600px; }
+	.user-info .label2 { margin: 6px 0  0 0;}
 	#main { width: 750px; }
 	.q-blue-men { width: 152px; height: 404px; }
 	.q-yellow-men { width: 150px; height: 360px; }
@@ -158,7 +160,8 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.user-info { width: 290px; }
 	.fl-l, .fl-r, .w49, .w100 { float: none; width: 270px; }
 	.label { float: none; }
-	.user-info .label { float: none !important; width: 100% !important; text-align: left; }
+	.user-info .label { float: none !important; width: 100% !important; text-align: left; margin: 6px;}
+	.user-info .label2 { float: none !important; width: 100% !important; text-align: left; margin: 6px 0  0 8px;}
 	.q-ref { font-size: 14px; margin: 0 10px 2px 0; }
 	.q-text { width: 60%; font-size: 18px; line-height: 20px; margin-left: 29%; padding: 20px 5px; }
 	.q-selection { width: 50%; margin: 40px 0 0 49%; }
@@ -181,6 +184,7 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.fl-l { float: left; margin-right: 7%; width: 45%; }
 	.fl-r { width: 45%; float: left; }
 	.user-info .label { width: 103px; }
+	.user-info .label2 { margin: 6px 0  0 -110px;}
 	.q-men { position: absolute; bottom: -16%; left: 7%; }
 	.q-blue-men { width: 100px; height: 263px; }
 	.q-yellow-men { width: 100px; height: 240px; }

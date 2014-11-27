@@ -90,10 +90,10 @@ a) 18 puntos
 b) 22 puntos 
 c) 25 puntos 
 d) 37 puntos |true
-a) Super Bowl VI (Dallas vs Miami) 
-b) Super Bowl X (Dallas vs Pittsburgh) 
-c) Super Bowl XV (Oakland vs Philadelphia) 
-d) Super Bowl XXIII (San Francisco vs Cincinnati) |true
+a) Super Bowl VI 
+b) Super Bowl X
+c) Super Bowl XV 
+d) Super Bowl XXIII |true
 a) 3 horas y 48 minutos 
 b) 4 horas y 2 minutos 
 c) 4 horas y 14 minutos |true

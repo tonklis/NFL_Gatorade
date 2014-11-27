@@ -18,10 +18,11 @@ function getQuestion(){
 }
 
 function nextQuestion(){
-  if (index < 9) {
+  if (index < 9 && $('input[name=radio]:checked').val()) {
+    $("input[name=radio]").removeAttr("checked");
     index++;
     getQuestion(); 
-  } else {
+  } else if (index >= 9) {
     location.href = "/resultado";
   }
 }
