@@ -8,6 +8,8 @@ function onReady() {
 }
 
 function getQuestion(){
+  $("#question_text").fadeIn(200);
+  $("#answer_text").fadeIn(200);
   var question = $("#questions").data("questions")[index];
   $("#question_number").html(index + 1);
   $("#question_text").html(question.text);
@@ -19,6 +21,8 @@ function getQuestion(){
 
 function nextQuestion(){
   if (index < 9 && $('input[name=radio]:checked').val()) {
+    $("#question_text").hide();
+    $("#answer_text").hide();
     $("input[name=radio]").removeAttr("checked");
     index++;
     getQuestion(); 
