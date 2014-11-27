@@ -162,8 +162,8 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.label { float: none; }
 	.user-info .label { float: none !important; width: 100% !important; text-align: left; margin: 6px;}
 	.user-info .label2 { float: none !important; width: 100% !important; text-align: left; margin: 6px 0  0 8px;}
-	.q-ref { font-size: 14px; margin: 0 10px 2px 0; }
-	.q-text { width: 60%; font-size: 18px; line-height: 20px; margin-left: 29%; padding: 20px 5px; }
+	.q-ref { font-size: 10px; margin: 0 10px 2px 0; }
+	.q-text { width: 60%; font-size: 12px; line-height: 20px; margin-left: 29%; padding: 20px 5px; }
 	.q-selection { width: 50%; margin: 40px 0 0 40%; }
 	.q-selection label { font-size: 14px; line-height: 20px; }
 	.q-number { font-size: 35px; margin-left: 5%; }
