@@ -163,9 +163,9 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.user-info .label { float: none !important; width: 100% !important; text-align: left; margin: 6px;}
 	.user-info .label2 { float: none !important; width: 100% !important; text-align: left; margin: 6px 0  0 8px;}
 	.q-ref { font-size: 10px; margin: 0 10px 2px 0; }
-	.q-text { width: 60%; font-size: 12px; line-height: 20px; margin-left: 29%; padding: 20px 5px; }
+	.q-text { width: 60%; font-size: 14px; line-height: 20px; margin-left: 29%; padding: 20px 5px; }
 	.q-selection { width: 50%; margin: 40px 0 0 40%; }
-	.q-selection label { font-size: 14px; line-height: 20px; }
+	.q-selection label { font-size: 10px; line-height: 20px; }
 	.q-number { font-size: 35px; margin-left: 5%; }
 	.q-numberall { font-size: 21px; margin: 40px 30px 0 8px; }
 	.siguente-btn { margin: 20px 10px 0 0; float: right; }
