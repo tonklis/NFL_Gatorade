@@ -87,7 +87,7 @@ footer a { font-family: 'MyriadWebPro-Condensed'; font-size: 20px; text-decorati
 .yellow-btn { background: url(/assets/siguente-yellow.png) 0 0 no-repeat; }
 .red-btn { background: url(/assets/siguente-red.png) 0 0 no-repeat; }
 .siguente-btn:hover, .siguente-btn:focus { background-position: 0 -55px; }
-.siguente-btn input { display: block; width: 100%; height: 100%; background: none; }
+.siguente-btn input { display: block; width: 100%; height: 100%; background: none; outline: none; }
 .q-men { position: absolute; bottom: 0; right: 10%; }
 .q-blue-men { background: url(/assets/easy-men.png); background-size: cover; width: 202px; height: 537px; }
 .q-yellow-men { background: url(/assets/medium-men.png); background-size: cover; width: 200px; height: 481px; }
@@ -257,4 +257,13 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	font-family: courier;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+#condiciones{
+	opacity: 1;
+	margin-bottom: 5px;
+}
+
+#condiciones-div{
+	font-size: .65em;
 }

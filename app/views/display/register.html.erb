@@ -7,72 +7,73 @@
 			<div class="logo animated-logo bounceInDown "></div>
 		</header>
 
-		<div id="main">
-			<h1 class="animated fadeIn">Registro</h1>
+		<form id="user-info-form" method="post" action="/users/submit_with_address">
+			<div id="main">
+				<h1 class="animated fadeIn">Registro</h1>
+					<div class="user-info">
+						<div class="w100 animated-infoblock1 bounceInLeft">
+							<input type="text" placeholder="Nombre(s)" id="nombres" name="nombres" required/>
+						</div>
+						<div class="w100 animated-infoblock2 bounceInLeft">
+							<input type="text" placeholder="Apellidos" id="apellidos" name="apellidos" required/>
 
-			<form id="user-info-form" method="post" action="/users/submit_with_address">
-				<div class="user-info">
-					<div class="w100 animated-infoblock1 bounceInLeft">
-						<input type="text" placeholder="Nombre(s)" id="nombres" name="nombres" required/>
-					</div>
-					<div class="w100 animated-infoblock2 bounceInLeft">
-						<input type="text" placeholder="Apellidos" id="apellidos" name="apellidos" required/>
+						</div>
+						<div class="w100 animated-infoblock3 bounceInLeft">
+							<input type="email" placeholder="Email" id="email" name="email" required/>
+						</div>
+						<div class="fl-l  animated-infoblock4 bounceInLeft">
+							<input type="text" placeholder="Teléfono" id="telefono" name="telefono" required/>
+						</div>
+						<div class="fl-r animated-infoblock4 bounceInLeft">
+							<input type="text" placeholder="Celular" id="celular" name="celular" required/>
+						</div>
+						<div class="fl-l animated-infoblock1 bounceInRight">
+							<input type="text" placeholder="Calle y número" id="calle" name="calle" required/>
+						</div>
+						<div class="fl-r animated-infoblock2 bounceInRight">
+							<input type="text" placeholder="Colonia" id="colonia" name="colonia" required/>
+						</div>
+						<div class="fl-l animated-infoblock2 bounceInRight">
+							<input type="text" placeholder="Codigo Postal" id="codigo" name="codigo" required/>
+						</div>
+						<div class="fl-r animated-infoblock3 bounceInRight">
+							<input type="text" placeholder="DELEGACIÓN / MUNICIPIO " id="municipio" name="municipio" required/>
+						</div>
+						<div class="fl-l animated-infoblock4 bounceInRight">
+							<input type="text" placeholder="CIUDAD" id="ciudad" name="ciudad" required/>
+						</div>
+						<div class="fl-r last animated-infoblock5 bounceInRight">
+							<input type="text" placeholder="ESTADO" id="estado" name="estado" required/>
+						</div>
 
+						<div class="label animated-infoblock5 bounceInRight">FECHA DE NACIMIENTO</div>
+						<div class="dia animated-infoblock5 bounceInRight">
+							<input type="number" placeholder="DÍA" id="dia" name="dia" min="1" max="31" required/>
+						</div>
+						<div class="mes animated-infoblock5 bounceInRight">
+							<input type="number" placeholder="Mes" id="mes" name="mes" min="1" max="12" required/>
+						</div>
+						<div class="ano animated-infoblock5 bounceInRight">
+							<input type="number" placeholder="AÑO" id="anio" name="anio" min="1940" max="2010" required/>
+						</div>
+						<div class="clear"></div>
+						<div class="siguiente animated-infoblock5 bounceInRight">
+							<input type="submit" value="" id="registraButton">
+						</div>
 					</div>
-					<div class="w100 animated-infoblock3 bounceInLeft">
-						<input type="email" placeholder="Email" id="email" name="email" required/>
-					</div>
-					<div class="fl-l  animated-infoblock4 bounceInLeft">
-						<input type="text" placeholder="Teléfono" id="telefono" name="telefono" required/>
-					</div>
-					<div class="fl-r animated-infoblock4 bounceInLeft">
-						<input type="text" placeholder="Celular" id="celular" name="celular" required/>
-					</div>
-					<div class="fl-l animated-infoblock1 bounceInRight">
-						<input type="text" placeholder="Calle y número" id="calle" name="calle" required/>
-					</div>
-					<div class="fl-r animated-infoblock2 bounceInRight">
-						<input type="text" placeholder="Colonia" id="colonia" name="colonia" required/>
-					</div>
-					<div class="fl-l animated-infoblock2 bounceInRight">
-						<input type="text" placeholder="Codigo Postal" id="codigo" name="codigo" required/>
-					</div>
-					<div class="fl-r animated-infoblock3 bounceInRight">
-						<input type="text" placeholder="DELEGACIÓN / MUNICIPIO " id="municipio" name="municipio" required/>
-					</div>
-					<div class="fl-l animated-infoblock4 bounceInRight">
-						<input type="text" placeholder="CIUDAD" id="ciudad" name="ciudad" required/>
-					</div>
-					<div class="fl-r last animated-infoblock5 bounceInRight">
-						<input type="text" placeholder="ESTADO" id="estado" name="estado" required/>
-					</div>
+				<div class="clear"></div>
+				<!-- close div.user-info -->
+			</div>
+			<!-- close div#main -->
 
-					<div class="label animated-infoblock5 bounceInRight">FECHA DE NACIMIENTO</div>
-
-					<div class="mes animated-infoblock5 bounceInRight">
-						<input type="number" placeholder="Mes" id="mes" name="mes" min="1" max="12" required/>
-					</div>
-					<div class="dia animated-infoblock5 bounceInRight">
-						<input type="number" placeholder="DÍA" id="dia" name="dia" min="1" max="31" required/>
-					</div>
-					<div class="ano animated-infoblock5 bounceInRight">
-						<input type="number" placeholder="AÑO" id="anio" name="anio" min="1940" max="2010" required/>
-					</div>
-					<div class="clear"></div>
-					<div class="siguiente animated-infoblock5 bounceInRight">
-						<input type="submit" value="" id="registraButton">
-					</div>
+			<footer>
+				<div id="condiciones-div">
+					<input type="checkbox" name="condiciones" id="condiciones" value="true" required />Acepto los
+					<a href="#">Términos y Condiciones.</a>&nbsp;&nbsp;
+					<a href="#">Ver Aviso De Privacidad.</a>
 				</div>
-			</form>
-			<div class="clear"></div>
-			<!-- close div.user-info -->
-
-		</div>
-		<!-- close div#main -->
-
-		<footer>
-			<a href="#">Términos y Condiciones</a>
-		</footer>
+			</footer>
+		</form>
 	</div>
 	<!-- close div#wrapper -->
 
