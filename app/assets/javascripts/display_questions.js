@@ -38,7 +38,6 @@ function onReady() {
     var now = new Date();
     var elapsedTime = (now.getTime() - before.getTime());
     if (elapsedTime > 20000){
-      timer = 20;
       nextQuestionOverride();
       before = new Date();    
     }else{
@@ -62,6 +61,8 @@ function getQuestion(){
 }
 
 function nextQuestion(){
+  timer = 20;
+  before = new Date();    
   if (index < 9 && $('input[name=radio]:checked').val()) {
     $("#question_text").hide();
     $("#answer_text").hide();
@@ -74,6 +75,8 @@ function nextQuestion(){
 }
 
 function nextQuestionOverride(){
+  timer = 20;
+  before = new Date();    
   if (index < 9) {
     $("#question_text").hide();
     $("#answer_text").hide();
