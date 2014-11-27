@@ -235,7 +235,7 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.felicidades .codigo { font-size: 17px; bottom: 4px; left: 86px; width: 148px; height: 21px; padding-top: 0; }
 }
 #user-info-form label{
-	font-size: .4em;
+	font-size: .37em;
 	float: inherit;
 	color: #FF5010;
 }
