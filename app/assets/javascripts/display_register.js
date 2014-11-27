@@ -6,6 +6,15 @@ function onReady() {
         submitHandler: function(form) {
           form.submit();
         },
+        showErrors: function(errorMap, errorList) {
+            if (errorList.length) {
+               var s = errorList.shift();
+               var n = [];
+               n.push(s);
+               this.errorList = n;
+            }
+            this.defaultShowErrors();
+        },
         rules: {
           nombres: {
             minlength:3, 
