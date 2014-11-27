@@ -1,6 +1,7 @@
 <%= javascript_include_tag 'display_register' %>
 
 <body class="bg_blue">
+	<div class="alert" id="barra_alerta" style="display:none;">No se pudo registrar el usuario</div>
 	<div id="wrapper">
 		<header>
 			<div class="logo animated-logo bounceInDown "></div>
@@ -11,7 +12,7 @@
 
 			<form id="user-info-form" method="post" action="/users/submit_with_address">
 				<div class="user-info">
-					<div class="w49 animated-infoblock1 bounceInLeft">
+					<div class="w100 animated-infoblock1 bounceInLeft">
 						<input type="text" placeholder="Nombre(s)" id="nombres" name="nombres" required/>
 					</div>
 					<div class="w100 animated-infoblock2 bounceInLeft">

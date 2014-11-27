@@ -18,7 +18,7 @@ function validateCode() {
           location.href = "/registro";
         } else if (data.valid) {
           // codigo invalido
-          alert("Código inválido");
+          $('#barra_alerta').show();
         }
       },error: function(){
         alert("No se pudo validar el código, por favor intenta más tarde.");

@@ -234,3 +234,27 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.felicidades .tienda a:focus { opacity: 0.8; }
 	.felicidades .codigo { font-size: 17px; bottom: 4px; left: 86px; width: 148px; height: 21px; padding-top: 0; }
 }
+#user-info-form label{
+	font-size: .4em;
+	float: inherit;
+	color: #FF5010;
+}
+
+.alert {
+  color: #fff;
+  background-color: red;
+  border-color: #ebccd1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  position: fixed;
+  z-index: 10000;
+  text-align: center;
+  width: 100%;
+  top:0;
+  left: 0;
+	text-transform: none;
+	font-family: courier;
+	font-size: 16px;
+	font-weight: bold;
+}
