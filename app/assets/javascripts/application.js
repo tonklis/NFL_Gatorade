@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require jquery.validate.min
 //= require turbolinks
+//= require modernizr-2.6.2.min
+//= require prefixfree.min.js
 //= require display
