@@ -33,6 +33,9 @@ class User < ActiveRecord::Base
           Winner.create(user_id: user.id, code_id: winner_code.id, prize_id: prize.id)
           result = prize
         end
+      else
+        loser_code = Code.where("text = ? AND used is null", code).first
+        loser_code.update_attribute(:used, true)
       end
     end
     return result

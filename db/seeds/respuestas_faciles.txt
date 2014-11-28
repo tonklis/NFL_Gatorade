@@ -26,8 +26,8 @@ a) Una manzana |true
 b) Una barra de mantequilla 
 c) Una barra de chocolate 
 d) Un refresco de cola 
-a) Gracias por estar ahí todo el tiempo 
-b) Esto es por todo el Gatorade que me compraste |true
+a) Gracias por estar ahí 
+b) Por el Gatorade que me compraste |true
 c) Espero que lo disfrutes mucho 
 d) Te amo 
 a) UCLA Bruins  
