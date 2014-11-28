@@ -111,7 +111,7 @@ file_respuestas.close
 file = File.open('db/seeds/premios_faciles.csv', 'r:UTF-8')
 while (line = file.gets)
 	arr = line.encode!('UTF-8', 'UTF-8', :invalid => :replace).split(",")
-	code = Prize.create(difficulty_id: facil_id, description: arr[0])
+	code = Prize.create(difficulty_id: facil_id, description: arr[0].chomp)
 end
 file.close
 
@@ -119,7 +119,7 @@ file.close
 file = File.open('db/seeds/premios_intermedios.csv', 'r:UTF-8')
 while (line = file.gets)
 	arr = line.encode!('UTF-8', 'UTF-8', :invalid => :replace).split(",")
-	code = Prize.create(difficulty_id: intermedio_id, description: arr[0])
+	code = Prize.create(difficulty_id: intermedio_id, description: arr[0].chomp)
 end
 file.close
 
@@ -127,6 +127,6 @@ file.close
 file = File.open('db/seeds/premios_dificiles.csv', 'r:UTF-8')
 while (line = file.gets)
 	arr = line.encode!('UTF-8', 'UTF-8', :invalid => :replace).split(",")
-	code = Prize.create(difficulty_id: dificil_id, description: arr[0])
+	code = Prize.create(difficulty_id: dificil_id, description: arr[0].chomp)
 end
 file.close
