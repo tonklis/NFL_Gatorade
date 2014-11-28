@@ -63,6 +63,9 @@ class CodesController < ApplicationController
 
   def is_valid
     @code = Code.is_valid(params[:code])
+    if @code
+      session[:code] = @code.text
+    end
   end
 
   private

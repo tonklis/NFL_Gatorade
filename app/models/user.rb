@@ -13,8 +13,8 @@ class User < ActiveRecord::Base
     if answers.uniq.count == 10
       is_winner = true
       answers.each do |answer|
-        question_id = answer[:question_id]
-        answer_id = answer[:answer_id]
+        question_id = answer["question_id"]
+        answer_id = answer["answer_id"]
 
         answer = Answer.find(answer_id)
         if not answer.correct or answer.question_id != question_id or answer.question.difficulty_id != difficulty_id
@@ -26,11 +26,11 @@ class User < ActiveRecord::Base
         user = User.where("id = ?", user_id).first
         #difficulty = Difficulty.find(difficulty_id)
         prize = Prize.where("difficulty_id = ? AND stock is null", difficulty_id).first
-        code = Code.where("text = ? AND used is null", code).first
-        if prize and code and user
+        winner_code = Code.where("text = ? AND used is null", code).first
+        if prize and winner_code and user
           prize.update_attribute(:stock, 1)
-          code.update_attribute(:used, true)
-          Winner.create(user_id: user.id, code_id: code.id, prize_id: prize.id)
+          winner_code.update_attribute(:used, true)
+          Winner.create(user_id: user.id, code_id: winner_code.id, prize_id: prize.id)
           result = prize
         end
       end

@@ -62,12 +62,17 @@ class UsersController < ApplicationController
   end
 
   def is_winner
-    @prize = User.is_winner(params[:user_id], params[:answers], params[:difficulty_id], params[:code])
+    @prize = User.is_winner(params[:user_id], ActiveSupport::JSON.decode(params[:answers]), params[:difficulty_id], params[:code])
+    if @prize
+      session[:prize] = @prize.description
+    end
   end
 
   def submit_with_address
     @user = User.submit_with_address(params[:nombres], params[:apellidos], params[:email], params[:telefono], params[:celular], params[:calle], params[:colonia], params[:municipio], params[:ciudad], params[:estado], params[:codigo], params[:anio], params[:mes], params[:dia])
     if @user
+      session[:user_id] = @user.id
+      #lock de token
       redirect_to "/seleccion"
     end
   end

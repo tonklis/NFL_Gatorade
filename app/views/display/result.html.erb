@@ -6,12 +6,12 @@
 		</header>
 
 		<div id="main">
-
+                    <% if @prize %>
 			<div class="felicidades">
 				<div class="text animated-congrat bounceInDown">FELICIDADES</div>
 				<div class="text1 animated-congrat bounceInLeft">HAS GANADO</div>
 				<div class="animated-winsum zoomInDown price">
-					<span>$</span> <b>1500</b>
+					<span>$</span> <b><%= @amount %></b>
 				</div>
 
 				<div class="text2 animated-yourcode bounceInRight">canjeables en</div>
@@ -19,8 +19,18 @@
 					<a href="http://www.tiendanfl.com.mx/" target="_blank"></a>
 				</div>
 				<div class="text2 animated-yourcode2 zoomInDown">USANDO ESTE código</div>
-				<div class="codigo animated-wincode bounceInLeft">XXXXXXXXXX</div>
+				<div class="codigo animated-wincode bounceInLeft" style="text-transform: none !important"><%= @prize.description %></div>
 			</div>
+                    <% else %>
+                        <div class="gracias">
+
+				<div class="text1">POR PARTICIPAR</div>
+				<div class="text2 animated-page1-h1 fadeIn">TE INVITAMOS A SEGUIR INTENTÁNDOLO</div>
+				<div class="nuevamente-btn animated-nuevmente bounceInUp">
+					<a href="/"></a>
+				</div>
+			</div>
+                    <% end %>
 
 		</div>
 		<!-- close div#main -->

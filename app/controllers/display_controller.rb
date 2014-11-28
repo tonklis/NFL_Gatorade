@@ -14,11 +14,25 @@ class DisplayController < ApplicationController
 
   def questions
     @styles = get_styles(session[:difficulty_id].to_i)
-    @questions = Question.by_difficulty(session[:difficulty_id])
+    @user_id = session[:user_id]
+    @code = session[:code]
+    @difficulty_id = session[:difficulty_id]
+    @questions = Question.by_difficulty(@difficulty_id)
   end
 
   def result
-
+    if session[:prize]
+      @prize = Prize.find_by_description(session[:prize])
+      @amount = nil
+      if @prize.difficulty_id == 1
+        @amount = 500
+      elsif @prize.difficulty_id == 2
+        @amount = 750 
+      elsif @prize.difficulty_id == 3
+        @amount = 1500
+      end
+    end
+    reset_session
   end
 
   def get_styles difficulty_id

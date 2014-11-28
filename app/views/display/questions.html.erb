@@ -5,7 +5,7 @@
             <div class="logo animated-logo zoomIn "></div>
         </header>
 
-        <div id="main" class="width100">
+        <div id="main" class="width100" data-user-id="<%= @user_id %>" data-difficulty-id="<%= @difficulty_id %>" data-code="<%= @code %>">
 
             <div class="q-men <%= @styles[0] %>"></div>
 
@@ -13,7 +13,7 @@
                 <div class="lines <%= @styles[1] %>"></div>
                 <div class="q-number" id="question_number"></div>
                 <div class="q-numberall">/ 10</div>
-                <div class="q-text " id="question_text">
+                <div class="q-text " id="question_text" data-value="">
                     
                 </div>
                 <div class="q-ref animated fadeIn" id="question_source" style="display: none;"></div>
@@ -23,20 +23,20 @@
             <div class="q-selection <%= @styles[2] %> animated fadeIn" id="answer_text">
 
                 <div>
-                    <input id="radio1" type="radio" name="radio" value="1">
-                    <label for="radio1" id="question_answer_0"></label>
+                    <input id="radio1" type="radio" name="radio" value="0">
+                    <label for="radio1" id="question_answer_0" data-value=""></label>
                 </div>
                 <div>
-                    <input id="radio2" type="radio" name="radio" value="2">
-                    <label for="radio2" id="question_answer_1"></label>
+                    <input id="radio2" type="radio" name="radio" value="1">
+                    <label for="radio2" id="question_answer_1" data-value=""></label>
                 </div>
                 <div>
-                    <input id="radio3" type="radio" name="radio" value="3">
-                    <label for="radio3" id="question_answer_2"></label>
+                    <input id="radio3" type="radio" name="radio" value="2">
+                    <label for="radio3" id="question_answer_2" data-value=""></label>
                 </div>
                 <div>
-                    <input id="radio4" type="radio" name="radio" value="4">
-                    <label for="radio4" id="question_answer_3"></label>
+                    <input id="radio4" type="radio" name="radio" value="3">
+                    <label for="radio4" id="question_answer_3" data-value=""></label>
                 </div>
 
             </div>
