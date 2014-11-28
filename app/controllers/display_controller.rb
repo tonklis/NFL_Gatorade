@@ -18,6 +18,16 @@ class DisplayController < ApplicationController
     @code = session[:code]
     @difficulty_id = session[:difficulty_id]
     @questions = Question.by_difficulty(@difficulty_id)
+    
+    code = Code.find_by_text(@code)
+    if not code
+      redirect_to "/resultado"
+    elsif code.locked
+      code.update_attribute(:used, true)
+      redirect_to "/resultado"
+    else
+      code.update_attribute(:locked, true) 
+    end
   end
 
   def result
