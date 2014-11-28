@@ -44,9 +44,9 @@ function getQuestion(){
 }
 
 function nextQuestion(){
-  timer = 20;
-  before = new Date();    
   if (index < 9 && $('input[name=radio]:checked').val()) {
+    timer = 20;
+    before = new Date();    
     pushAnswer();
     $("#question_text").hide();
     $("#answer_text").hide();
@@ -68,11 +68,11 @@ function pushAnswer(){
 }
 
 function nextQuestionOverride(){
-  timer = 20;
-  before = new Date();    
   if (index < 9) {
 
     if($('input[name=radio]:checked').val()){
+      timer = 20;
+      before = new Date();    
       pushAnswer();
     }
     $("#question_text").hide();
