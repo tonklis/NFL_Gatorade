@@ -130,3 +130,11 @@ while (line = file.gets)
 	code = Prize.create(difficulty_id: dificil_id, description: arr[0].chomp)
 end
 file.close
+
+Question.find(8).destroy
+Question.find(26).destroy
+Question.find(31).destroy
+Question.find(43).destroy
+Question.find(44).destroy
+Question.find(61).destroy
+Question.find(63).destroy
