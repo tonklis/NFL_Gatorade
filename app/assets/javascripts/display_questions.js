@@ -15,6 +15,10 @@ function onReady() {
     $('label').css('display', 'inline-block');
   });
 
+  $(window).bind('beforeunload', function() {
+      return 'Si sales, tu código y participación se anulará.' ;
+  });
+
   getQuestion();
   $("#siguiente_btn").on("click", nextQuestion);
   before = new Date();
@@ -60,6 +64,7 @@ function nextQuestion(){
     getQuestion(); 
   } else if (index >= 9) {
     pushAnswer();
+    $(window).unbind('beforeunload');
     submitQuestions();
   }
 }
@@ -87,6 +92,7 @@ function nextQuestionOverride(){
     getQuestion(); 
   } else if (index >= 9) {
     pushAnswer();
+    $(window).unbind('beforeunload');
     submitQuestions();
   }
 }

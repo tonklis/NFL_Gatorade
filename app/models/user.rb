@@ -17,7 +17,8 @@ class User < ActiveRecord::Base
         answer_id = answer["answer_id"]
 
         answer = Answer.find(answer_id)
-        if not answer.correct or answer.question_id != question_id or answer.question.difficulty_id != difficulty_id
+        if not answer.correct or answer.question_id != question_id or answer.question.difficulty_id != difficulty_id.to_i
+          logger.info("ANSWER #{answer.id} #{answer.correct } #{answer.question_id != question_id} #{ answer.question.difficulty_id != difficulty_id} " )
           is_winner = false
         end
       end
@@ -35,7 +36,7 @@ class User < ActiveRecord::Base
         end
       else
         loser_code = Code.where("text = ? AND used is null", code).first
-        loser_code.update_attribute(:used, true)
+        loser_code.update_attribute(:used, true) if loser_code
       end
     end
     return result
