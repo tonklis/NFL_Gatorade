@@ -10,6 +10,11 @@ var before;
 var answers = Array();
 
 function onReady() {
+  $('input').click(function(){
+    $('label').css('display', 'none');
+    $('label').css('display', 'inline-block');
+  });
+
   getQuestion();
   $("#siguiente_btn").on("click", nextQuestion);
   before = new Date();
