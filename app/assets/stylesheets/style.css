@@ -99,6 +99,11 @@ footer a { font-family: 'MyriadWebPro-Condensed'; font-size: 20px; text-decorati
 .nuevamente-btn a:hover, .nuevamente-btn a:focus { background-position: 0 -52px; }
 .gracias .text1 { position: absolute; font-size: 65px; font-family: 'gBlack'; top: 112px; left: 83px; }
 .gracias .text2 { font-family: "gMedium"; font-size: 41px; left: 23px; line-height: 41px; position: absolute; text-align: center; top: 200px; }
+.text_error{
+}
+.text_error a{
+  color: #0000CE;
+}
 .felicidades { position: relative; background: url(/assets/felicidades.png) top left no-repeat; background-size: cover; width: 661px; height: 604px; margin: 0 auto; text-align: center; }
 .felicidades .text { font-family: 'gBlack'; font-size: 101px; padding-top: 13px; }
 .felicidades .text1 { font-size: 69px; font-family: 'gBlack'; line-height: 63px; }
@@ -224,6 +229,12 @@ input[type=radio]:not(old):checked + label { background-position: 0 -25px; }
 	.nuevamente-btn { bottom: 5px; left: 75px; }
 	.nuevamente-btn a { width: 166px; height: 24px; }
 	.nuevamente-btn a:hover, .nuevamente-btn a:focus { background-position: 0 -24px; }
+        .text_error{
+
+        }
+        .text_error a{
+          color: #0000CE;
+        }
 	.gracias .text1 { font-size: 30px; top: 54px; left: 40px; }
 	.gracias .text2 { font-size: 20px; left: 10px; line-height: 20px; top: 95px; }
 	.felicidades { width: 310px; height: 283px; }

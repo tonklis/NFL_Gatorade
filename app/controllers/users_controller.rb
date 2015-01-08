@@ -69,11 +69,16 @@ class UsersController < ApplicationController
   end
 
   def submit_with_address
-    @user = User.submit_with_address(params[:nombres], params[:apellidos], params[:email], params[:telefono], params[:celular], params[:calle], params[:colonia], params[:municipio], params[:ciudad], params[:estado], params[:codigo], params[:anio], params[:mes], params[:dia])
-    if @user
-      session[:user_id] = @user.id
-      #lock de token
-      redirect_to "/seleccion"
+    begin
+      @user = User.submit_with_address(params[:nombres], params[:apellidos], params[:email], params[:telefono], params[:celular], params[:calle], params[:colonia], params[:municipio], params[:ciudad], params[:estado], params[:codigo], params[:anio], params[:mes], params[:dia])
+      if @user
+        session[:user_id] = @user.id
+        #lock de token
+        redirect_to "/seleccion"
+      end
+    rescue
+      logger.error("ERROR: #{params}")
+      redirect_to "/error"
     end
   end
 

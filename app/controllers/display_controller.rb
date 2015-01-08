@@ -45,6 +45,10 @@ class DisplayController < ApplicationController
     reset_session
   end
 
+  def error
+
+  end
+
   def get_styles difficulty_id
     result = []
     if difficulty_id == 1

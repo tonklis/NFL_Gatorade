@@ -41,6 +41,7 @@ Rails.application.routes.draw do
   get "preguntas" => "display#questions"
   get "resultado" => "display#result"
   get "registro" => "display#register"
+  get "error" => "display#error"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
